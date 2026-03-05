@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 <div class="sidebar-backdrop"></div>
     <div class="layout">
 
-        <aside class="sidebar">
+        <aside id="menu-recepcionista" class="sidebar">
             <div class="logo">
                 <img id="logo" src="../../assets/img/Logo de clínica Veterinaria azul.png" alt="logo">
             </div>
@@ -28,7 +28,7 @@
                 <li>
                     <a href="#">
                         <img src="../../assets/icons/icon-pacientes.png" alt="pacientes">
-                        pacientes
+                        Pacientes
                     </a>
                 </li>
                 <li>
@@ -40,13 +40,13 @@
                 <li>
                     <a href="#">
                         <img src="../../assets/icons/icon-pagos.png" alt="pagos">
-                        pagos
+                        Pagos
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="../../assets/icons/icon-historial.png" alt="historial">
-                        historial Citas
+                        Historial Citas
                     </a>
                 </li>
             </ul>                    
@@ -55,18 +55,18 @@
         <header class="header">
             <h1>Citas</h1>
 
-            <button class="menu-toggle" aria-label="Abrir-menu" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-recepcionista">
                 ☰
             </button>
             <div class="header-actions">
                 <a class="btn-new" href="#">
-                    <img src="../../assets/icons/icon-newcita.png" alt="">
+                    <img src="../../assets/icons/icon-newcita.png" alt="Icono nueva cita">
                     Nueva Cita
                 </a>
 
                 <a class="btn-logout" href="#">
-                    <img src="../../assets/icons/icon-sesion.png" alt="">
-                    Cerrar Sesion
+                    <img src="../../assets/icons/icon-sesion.png" alt="Icono cerrar sesión">
+                    Cerrar Sesión
                 </a>
             </div>
         </header>
@@ -74,7 +74,7 @@
         <main class="main">
             <header class="header-main">
                 <h1>Citas Programadas</h1>
-                <span>Recepcion | Control de agenda diaria</span>
+                <span>Recepción | Control de agenda diaria</span>
             </header>
             
                 <!-------------------------------------------CARDS DE CITAS----------------------------------------------------------->
