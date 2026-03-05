@@ -191,6 +191,13 @@
 
 }
 
+.sidebar li a:focus-visible,
+.header a:focus-visible,
+.menu-toggle:focus-visible{
+  outline: 3px solid #0071BC;
+  outline-offset: 2px;
+}
+
 /*Cerrar Sesion*/
 .sesion{
     margin-top: auto;
@@ -296,6 +303,10 @@
     z-index: 1000;
   }
 
+  body.menu-open{
+    overflow: hidden;
+  }
+
   /* Estado abierto */
   body.menu-open .sidebar{
     transform: translateX(0);
@@ -320,7 +331,7 @@
 
 /*-------------------------------------------------------responsive----------------------------------------------------------------*/
 /* =======================RESPONSIVE <= 800pxSidebar pasa debajo del header y se vuelve horizontal======================= */
-@media (max-width: 900px){
+@media (min-width: 601px) and (max-width: 900px){
 
   /* 1) Reordenar el grid */
   .layout{
